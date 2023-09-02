@@ -10,6 +10,7 @@ class Program
         int size = Convert.ToInt32(Console.ReadLine());
         string[] array = new string[size];
 
+        Console.WriteLine("Введите через enter строки");
         for (int i = 0; i < array.Length; i++)
         {
             array[i] = Console.ReadLine();
@@ -22,7 +23,7 @@ class Program
         {
             Console.Write($"{array[i]},");
         }
-        Console.WriteLine();
+        //Console.WriteLine();
 
         Console.Write("\b");
         Console.Write(" ");
