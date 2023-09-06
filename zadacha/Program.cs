@@ -44,15 +44,19 @@ class Program
                 j++;
             }
         }
-        Console.WriteLine("Получившийся массив, где длина каждой строки меньше или равна 3: ");
-        for (int k = 0; k < secondSize; k++)
+        
+        if (j == 0) Console.WriteLine("В исходном массиве нет строк, длина которых меньше или равна 3");
+        else
         {
-            Console.Write($"{secondArray[k]},");
+            Console.WriteLine("Получившийся массив, где длина каждой строки меньше или равна 3: ");
+            for (int k = 0; k < secondSize; k++)
+            {
+                Console.Write($"{secondArray[k]},");
+            }
+
+            Console.Write("\b");
+            Console.Write(" ");
+            Console.WriteLine();
         }
-
-        Console.Write("\b");
-        Console.Write(" ");
-        Console.WriteLine();
-
     }
 }
